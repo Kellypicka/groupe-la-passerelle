@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupe La Passerelle - Services Numériques</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⤊</span>
+                <span class="logo-text">Groupe La Passerelle</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="active">Accueil</a>
+                <a href="presentation.html">Présentation</a>
+                <div class="dropdown">
+                    <a href="#">Expertises <span class="arrow">▼</span></a>
+                    <div class="dropdown-content">
+                        <a href="expertise-reseaux.html">Réseaux</a>
+                        <a href="expertise-data.html">Analyse de données</a>
+                        <a href="expertise-programmation.html">Programmation</a>
+                        <a href="expertise-bdd.html">Bases de données</a>
+                        <a href="expertise-securite.html">Sécurité</a>
+                    </div>
+                </div>
+                <a href="actualites.html">Actualités</a>
+                <a href="recrutement.html">Recrutement</a>
+                <a href="contact.html" class="btn-contact">Contact</a>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <button class="theme-toggle" aria-label="Changer le thème">
+                <span class="theme-icon">☀️</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">
+                L'excellence <span class="highlight">numérique</span><br>
+                pour votre entreprise
+            </h1>
+            <p class="hero-subtitle">
+                Une ESN innovante qui transforme vos défis technologiques<br>
+                en opportunités de croissance.
+            </p>
+            <div class="hero-buttons">
+                <a href="#expertises" class="btn btn-primary">Découvrir nos expertises</a>
+                <a href="contact.html" class="btn btn-secondary">Nous contacter</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="gradient-overlay"></div>
+        </div>
+    </section>
+
+    <!-- Points forts -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Notre valeur ajoutée</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Rapidité d'exécution</h3>
+                    <p>Délais optimisés grâce à nos méthodologies agiles</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Sécurité maximale</h3>
+                    <p>Protection des données selon les normes les plus strictes</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>ROI garanti</h3>
+                    <p>Solutions orientées résultats et performance business</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Accompagnement</h3>
+                    <p>Support continu et formation de vos équipes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertises -->
+    <section id="expertises" class="expertises">
+        <div class="container">
+            <h2 class="section-title">Domaines d'expertise</h2>
+            <div class="expertises-grid">
+                <a href="expertise-reseaux.html" class="expertise-card">
+                    <div class="expertise-content">
+                        <h3>Réseaux & Infrastructure</h3>
+                        <p>Infrastructure cloud, virtualisation, réseaux sécurisés</p>
+                        <span class="expertise-link">En savoir plus →</span>
+                    </div>
+                </a>
+                <a href="expertise-data.html" class="expertise-card">
+                    <div class="expertise-content">
+                        <h3>Analyse de données</h3>
+                        <p>Big Data, Business Intelligence, Machine Learning</p>
+                        <span class="expertise-link">En savoir plus →</span>
+                    </div>
+                </a>
+                <a href="expertise-programmation.html" class="expertise-card">
+                    <div class="expertise-content">
+                        <h3>Développement</h3>
+                        <p>Applications web, mobile, logiciels sur mesure</p>
+                        <span class="expertise-link">En savoir plus →</span>
+                    </div>
+                </a>
+                <a href="expertise-bdd.html" class="expertise-card">
+                    <div class="expertise-content">
+                        <h3>Bases de données</h3>
+                        <p>SQL, NoSQL, optimisation, administration</p>
+                        <span class="expertise-link">En savoir plus →</span>
+                    </div>
+                </a>
+                <a href="expertise-securite.html" class="expertise-card">
+                    <div class="expertise-content">
+                        <h3>Cybersécurité</h3>
+                        <p>Audit, protection, conformité RGPD</p>
+                        <span class="expertise-link">En savoir plus →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrousel Témoignages -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Ils nous font confiance</h2>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <div class="testimonial">
+                            <p class="testimonial-text">"Le Groupe La Passerelle a transformé notre infrastructure IT avec une efficacité remarquable."</p>
+                            <p class="testimonial-author">— Marc Dubois, Directeur Technique</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="testimonial">
+                            <p class="testimonial-text">"Leur expertise en cybersécurité nous a protégés lors de notre migration cloud."</p>
+                            <p class="testimonial-author">— Sophie Martin, DSI</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="testimonial">
+                            <p class="testimonial-text">"Une équipe réactive et compétente qui comprend parfaitement nos besoins métiers."</p>
+                            <p class="testimonial-author">— Thomas Leroy, CEO Startup</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev">‹</button>
+                <button class="carousel-btn next">›</button>
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">⤊</span>
+                        Groupe La Passerelle
+                    </a>
+                    <p>L'excellence numérique au service de votre entreprise.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Expertises</h4>
+                    <ul>
+                        <li><a href="expertise-reseaux.html">Réseaux</a></li>
+                        <li><a href="expertise-data.html">Analyse de données</a></li>
+                        <li><a href="expertise-programmation.html">Programmation</a></li>
+                        <li><a href="expertise-bdd.html">Bases de données</a></li>
+                        <li><a href="expertise-securite.html">Sécurité</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="presentation.html">Présentation</a></li>
+                        <li><a href="actualites.html">Actualités</a></li>
+                        <li><a href="recrutement.html">Recrutement</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>contact@grouplapasserelle.fr</p>
+                    <p>+33 1 23 45 67 89</p>
+                    <p>Paris, Lyon, Toulouse</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Groupe La Passerelle. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/darkmode.js"></script>
+</body>
+</html>

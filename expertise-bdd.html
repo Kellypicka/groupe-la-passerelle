@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expertise Bases de données - Groupe La Passerelle</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⤊</span>
+                <span class="logo-text">Groupe La Passerelle</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html">Accueil</a>
+                <a href="presentation.html">Présentation</a>
+                <div class="dropdown">
+                    <a href="#" class="active">Expertises <span class="arrow">▼</span></a>
+                    <div class="dropdown-content">
+                        <a href="expertise-reseaux.html">Réseaux</a>
+                        <a href="expertise-data.html">Analyse de données</a>
+                        <a href="expertise-programmation.html">Programmation</a>
+                        <a href="expertise-bdd.html" class="active">Bases de données</a>
+                        <a href="expertise-securite.html">Sécurité</a>
+                    </div>
+                </div>
+                <a href="actualites.html">Actualités</a>
+                <a href="recrutement.html">Recrutement</a>
+                <a href="contact.html" class="btn-contact">Contact</a>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <button class="theme-toggle" aria-label="Changer le thème">
+                <span class="theme-icon">☀️</span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Bases de données</h1>
+            <p>Des architectures data optimisées pour la performance, la scalabilité et la fiabilité</p>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="content-grid">
+                <section class="content-block">
+                    <h2>Nos services bases de données</h2>
+                    <p>Nous concevons, implémentons et optimisons des architectures de données qui garantissent l'intégrité, la disponibilité et les performances de vos systèmes.</p>
+                    
+                    <div class="service-list">
+                        <div class="service-item">
+                            <h4>Conception & Modélisation</h4>
+                            <p>Modélisation conceptuelle, logique et physique adaptée à vos besoins métiers.</p>
+                        </div>
+                        <div class="service-item">
+                            <h4>Administration & Maintenance</h4>
+                            <p>Gestion quotidienne, sauvegardes, monitoring et résolution des incidents.</p>
+                        </div>
+                        <div class="service-item">
+                            <h4>Migration & Modernisation</h4>
+                            <p>Migration vers le cloud, modernisation des systèmes legacy et optimisation.</p>
+                        </div>
+                        <div class="service-item">
+                            <h4>Performance & Tuning</h4>
+                            <p>Optimisation des requêtes, indexation stratégique et scaling horizontal/vertical.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-block">
+                    <h2>Technologies maîtrisées</h2>
+                    <div class="tech-grid">
+                        <span class="tech-badge">PostgreSQL</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">Oracle</span>
+                        <span class="tech-badge">SQL Server</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">Redis</span>
+                        <span class="tech-badge">Cassandra</span>
+                        <span class="tech-badge">Elasticsearch</span>
+                        <span class="tech-badge">AWS RDS</span>
+                        <span class="tech-badge">Azure SQL</span>
+                        <span class="tech-badge">Google Cloud SQL</span>
+                        <span class="tech-badge">DynamoDB</span>
+                    </div>
+                </section>
+
+                <section class="content-block">
+                    <h2>Approche hybride SQL/NoSQL</h2>
+                    <p>Nous proposons des architectures polyglottes qui combinent le meilleur des mondes relationnel et non-relationnel :</p>
+                    
+                    <div class="architecture-grid">
+                        <div class="arch-card">
+                            <h3>SQL</h3>
+                            <ul>
+                                <li>Transactions ACID</li>
+                                <li>Intégrité référentielle</li>
+                                <li>Requêtes complexes</li>
+                                <li>Rapports structurés</li>
+                            </ul>
+                        </div>
+                        <div class="arch-card">
+                            <h3>NoSQL</h3>
+                            <ul>
+                                <li>Scalabilité horizontale</li>
+                                <li>Flexibilité du schéma</li>
+                                <li>Haute performance</li>
+                                <li>Données non structurées</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-block">
+                    <h2>Cas client : Migration vers le cloud</h2>
+                    <div class="case-study">
+                        <h3>Migration d'une base Oracle on-premise vers AWS Aurora</h3>
+                        <p><strong>Situation initiale</strong> : Coûts de licence élevés, maintenance complexe, scalabilité limitée</p>
+                        <p><strong>Solution</strong> : Migration progressive avec replication en temps réel et fenêtre de maintenance minimale</p>
+                        <p><strong>Résultats</strong> : Réduction de 60% des coûts, amélioration de 300% des performances, scaling automatique</p>
+                    </div>
+                </section>
+
+                <section class="content-block">
+                    <h2>Notre méthodologie de migration</h2>
+                    <ol class="migration-steps">
+                        <li>
+                            <strong>Audit et analyse</strong>
+                            <p>Évaluation complète de l'existant et identification des dépendances</p>
+                        </li>
+                        <li>
+                            <strong>Proof of Concept</strong>
+                            <p>Validation technique avec un sous-ensemble de données critiques</p>
+                        </li>
+                        <li>
+                            <strong>Migration progressive</strong>
+                            <p>Migration par lots avec rollback possible à chaque étape</p>
+                        </li>
+                        <li>
+                            <strong>Optimisation post-migration</strong>
+                            <p>Fine-tuning et monitoring des performances en production</p>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Besoin d'optimiser vos bases de données ?</h2>
+            <p>Obtenez un audit gratuit de vos performances et architecture data.</p>
+            <a href="contact.html" class="btn btn-primary">Demander un audit</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">⤊</span>
+                        Groupe La Passerelle
+                    </a>
+                    <p>L'excellence numérique au service de votre entreprise.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Expertises</h4>
+                    <ul>
+                        <li><a href="expertise-reseaux.html">Réseaux</a></li>
+                        <li><a href="expertise-data.html">Analyse de données</a></li>
+                        <li><a href="expertise-programmation.html">Programmation</a></li>
+                        <li><a href="expertise-bdd.html">Bases de données</a></li>
+                        <li><a href="expertise-securite.html">Sécurité</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="presentation.html">Présentation</a></li>
+                        <li><a href="actualites.html">Actualités</a></li>
+                        <li><a href="recrutement.html">Recrutement</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>contact@grouplapasserelle.fr</p>
+                    <p>+33 1 23 45 67 89</p>
+                    <p>Paris, Lyon, Toulouse</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Groupe La Passerelle. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/darkmode.js"></script>
+</body>
+</html>

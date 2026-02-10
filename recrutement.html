@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recrutement - Groupe La Passerelle</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⤊</span>
+                <span class="logo-text">Groupe La Passerelle</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html">Accueil</a>
+                <a href="presentation.html">Présentation</a>
+                <div class="dropdown">
+                    <a href="#">Expertises <span class="arrow">▼</span></a>
+                    <div class="dropdown-content">
+                        <a href="expertise-reseaux.html">Réseaux</a>
+                        <a href="expertise-data.html">Analyse de données</a>
+                        <a href="expertise-programmation.html">Programmation</a>
+                        <a href="expertise-bdd.html">Bases de données</a>
+                        <a href="expertise-securite.html">Sécurité</a>
+                    </div>
+                </div>
+                <a href="actualites.html">Actualités</a>
+                <a href="recrutement.html" class="active">Recrutement</a>
+                <a href="contact.html" class="btn-contact">Contact</a>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <button class="theme-toggle" aria-label="Changer le thème">
+                <span class="theme-icon">☀️</span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Rejoignez notre équipe</h1>
+            <p>Participez à des projets innovants dans une entreprise à taille humaine</p>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <!-- Introduction -->
+            <section class="content-block">
+                <h2>Pourquoi nous rejoindre ?</h2>
+                <p>Chez Groupe La Passerelle, nous croyons que notre plus grande force réside dans nos collaborateurs. Nous offrons un environnement où l'innovation, l'apprentissage continu et l'excellence sont valorisés.</p>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <h3>Projets variés</h3>
+                        <p>Travaillez sur des projets innovants pour des clients de différents secteurs</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Formation continue</h3>
+                        <p>Budget formation annuel et certifications financées par l'entreprise</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Flexibilité</h3>
+                        <p>Télétravail jusqu'à 3 jours/semaine et horaires flexibles</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Évolution</h3>
+                        <p>Plan de carrière personnalisé et opportunités d'évolution rapide</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Offres d'emploi -->
+            <section class="content-block">
+                <h2>Nos offres en cours</h2>
+                
+                <div class="job-listings">
+                    <!-- Offre 1 -->
+                    <div class="job-card">
+                        <div class="job-header">
+                            <h3>Développeur Full Stack Senior</h3>
+                            <span class="job-location">Paris • CDI</span>
+                        </div>
+                        <div class="job-tags">
+                            <span class="job-tag">React</span>
+                            <span class="job-tag">Node.js</span>
+                            <span class="job-tag">TypeScript</span>
+                            <span class="job-tag">AWS</span>
+                        </div>
+                        <p class="job-description">Nous recherchons un développeur expérimenté pour rejoindre notre équipe projets. Vous participerez à la conception et au développement d'applications web complexes.</p>
+                        <button class="btn-apply" data-job="1">Postuler</button>
+                    </div>
+
+                    <!-- Offre 2 -->
+                    <div class="job-card">
+                        <div class="job-header">
+                            <h3>Architecte Cloud</h3>
+                            <span class="job-location">Lyon • CDI</span>
+                        </div>
+                        <div class="job-tags">
+                            <span class="job-tag">AWS</span>
+                            <span class="job-tag">Azure</span>
+                            <span class="job-tag">Terraform</span>
+                            <span class="job-tag">Kubernetes</span>
+                        </div>
+                        <p class="job-description">Concevez et implémentez des architectures cloud scalables et sécurisées pour nos clients. Expertise en migration et optimisation cloud requise.</p>
+                        <button class="btn-apply" data-job="2">Postuler</button>
+                    </div>
+
+                    <!-- Offre 3 -->
+                    <div class="job-card">
+                        <div class="job-header">
+                            <h3>Consultant Cybersécurité</h3>
+                            <span class="job-location">Toulouse • CDI</span>
+                        </div>
+                        <div class="job-tags">
+                            <span class="job-tag">ISO 27001</span>
+                            <span class="job-tag">Pentest</span>
+                            <span class="job-tag">RGPD</span>
+                            <span class="job-tag">SOC</span>
+                        </div>
+                        <p class="job-description">Réalisez des audits de sécurité, accompagnez nos clients dans leur conformité et développez notre offre de services sécurité.</p>
+                        <button class="btn-apply" data-job="3">Postuler</button>
+                    </div>
+
+                    <!-- Offre 4 -->
+                    <div class="job-card">
+                        <div class="job-header">
+                            <h3>Data Scientist</h3>
+                            <span class="job-location">Paris • CDI</span>
+                        </div>
+                        <div class="job-tags">
+                            <span class="job-tag">Python</span>
+                            <span class="job-tag">Machine Learning</span>
+                            <span class="job-tag">Big Data</span>
+                            <span class="job-tag">SQL</span>
+                        </div>
+                        <p class="job-description">Développez des modèles prédictifs et des algorithmes d'IA pour résoudre des problèmes métiers complexes pour nos clients.</p>
+                        <button class="btn-apply" data-job="4">Postuler</button>
+                    </div>
+
+                    <!-- Offre 5 -->
+                    <div class="job-card">
+                        <div class="job-header">
+                            <h3>Administrateur Bases de données</h3>
+                            <span class="job-location">Lyon • CDI</span>
+                        </div>
+                        <div class="job-tags">
+                            <span class="job-tag">PostgreSQL</span>
+                            <span class="job-tag">MongoDB</span>
+                            <span class="job-tag">AWS RDS</span>
+                            <span class="job-tag">Performance</span>
+                        </div>
+                        <p class="job-description">Gérez et optimisez les environnements de bases de données de nos clients. Expertise en performance tuning requise.</p>
+                        <button class="btn-apply" data-job="5">Postuler</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Processus de recrutement -->
+            <section class="content-block">
+                <h2>Notre processus de recrutement</h2>
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3>Entretien téléphonique</h3>
+                        <p>Échange de 30 minutes pour découvrir votre parcours et vos motivations</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3>Entretien technique</h3>
+                        <p>Rencontre avec l'équipe technique (1h30) incluant des questions techniques</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h3>Case study</h3>
+                        <p>Résolution d'un problème technique à présenter devant l'équipe</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h3>Entretien final</h3>
+                        <p>Discussion avec la direction sur les perspectives d'évolution</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Formulaire de candidature (masqué par défaut) -->
+    <section class="application-form" id="application-form" style="display: none;">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2 id="form-title">Postuler</h2>
+                    <button class="close-form" id="close-form">×</button>
+                </div>
+                <form id="recruitment-form">
+                    <input type="hidden" id="job-id" name="job_id">
+                    
+                    <div class="form-group">
+                        <label for="fullname">Nom complet *</label>
+                        <input type="text" id="fullname" name="fullname" class="form-control" required>
+                        <div class="error-message"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                        <div class="error-message"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone" class="form-control">
+                        <div class="error-message"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="linkedin">Profil LinkedIn</label>
+                        <input type="url" id="linkedin" name="linkedin" class="form-control" placeholder="https://linkedin.com/in/...">
+                        <div class="error-message"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cover-letter">Lettre de motivation *</label>
+                        <textarea id="cover-letter" name="cover_letter" class="form-control" rows="4" required placeholder="Pourquoi souhaitez-vous rejoindre Groupe La Passerelle ?"></textarea>
+                        <div class="error-message"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="resume">CV (PDF uniquement) *</label>
+                        <input type="file" id="resume" name="resume" class="form-control" accept=".pdf" required>
+                        <div class="error-message"></div>
+                    </div>
+                    
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">J'accepte que mes données soient traitées conformément à la politique de confidentialité *</label>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Envoyer ma candidature</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2>Questions fréquentes</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Proposez-vous des stages ?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous accueillons régulièrement des stagiaires en développement, data science et cybersécurité. Les offres de stage sont publiées sur cette page et sur nos réseaux sociaux.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quel est le délai de réponse après candidature ?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nous nous engageons à répondre à toutes les candidatures sous 7 jours ouvrés. Si vous êtes retenu pour la suite du processus, vous serez contacté dans les 48h après chaque étape.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Proposez-vous du télétravail à 100% ?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Notre politique actuelle permet jusqu'à 3 jours de télétravail par semaine. Certains postes peuvent être proposés en full remote selon le profil et l'expérience.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quels sont les avantages sociaux ?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nous proposons une mutuelle complète, un intéressement, un PEE, des titres-restaurant, un budget formation annuel et des événements d'entreprise réguliers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">⤊</span>
+                        Groupe La Passerelle
+                    </a>
+                    <p>L'excellence numérique au service de votre entreprise.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Expertises</h4>
+                    <ul>
+                        <li><a href="expertise-reseaux.html">Réseaux</a></li>
+                        <li><a href="expertise-data.html">Analyse de données</a></li>
+                        <li><a href="expertise-programmation.html">Programmation</a></li>
+                        <li><a href="expertise-bdd.html">Bases de données</a></li>
+                        <li><a href="expertise-securite.html">Sécurité</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="presentation.html">Présentation</a></li>
+                        <li><a href="actualites.html">Actualités</a></li>
+                        <li><a href="recrutement.html">Recrutement</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>contact@grouplapasserelle.fr</p>
+                    <p>+33 1 23 45 67 89</p>
+                    <p>Paris, Lyon, Toulouse</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Groupe La Passerelle. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/recruitment.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualités - Groupe La Passerelle</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⤊</span>
+                <span class="logo-text">Groupe La Passerelle</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html">Accueil</a>
+                <a href="presentation.html">Présentation</a>
+                <div class="dropdown">
+                    <a href="#">Expertises <span class="arrow">▼</span></a>
+                    <div class="dropdown-content">
+                        <a href="expertise-reseaux.html">Réseaux</a>
+                        <a href="expertise-data.html">Analyse de données</a>
+                        <a href="expertise-programmation.html">Programmation</a>
+                        <a href="expertise-bdd.html">Bases de données</a>
+                        <a href="expertise-securite.html">Sécurité</a>
+                    </div>
+                </div>
+                <a href="actualites.html" class="active">Actualités</a>
+                <a href="recrutement.html">Recrutement</a>
+                <a href="contact.html" class="btn-contact">Contact</a>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <button class="theme-toggle" aria-label="Changer le thème">
+                <span class="theme-icon">☀️</span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Actualités & Technologies</h1>
+            <p>Restez informé des dernières tendances technologiques et de nos réalisations</p>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <!-- Filtres -->
+            <div class="filters" id="news-filters">
+                <button class="filter-btn active" data-filter="all">Tous les articles</button>
+                <button class="filter-btn" data-filter="technologie">Technologie</button>
+                <button class="filter-btn" data-filter="securite">Sécurité</button>
+                <button class="filter-btn" data-filter="cloud">Cloud</button>
+                <button class="filter-btn" data-filter="entreprise">Entreprise</button>
+            </div>
+
+            <!-- Articles -->
+            <div class="articles-grid" id="articles-container">
+                <!-- Article 1 -->
+                <article class="article-card" data-category="technologie">
+                    <div class="article-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="article-content">
+                        <span class="article-date">15 Novembre 2024 • Technologie</span>
+                        <h3>L'avenir de l'IA générative en entreprise</h3>
+                        <p>Découvrez comment les modèles génératifs transforment les processus métiers et créent de nouvelles opportunités.</p>
+                        <a href="#" class="article-link">Lire l'article →</a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card" data-category="securite">
+                    <div class="article-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="article-content">
+                        <span class="article-date">8 Novembre 2024 • Sécurité</span>
+                        <h3>Nouvelles menaces ransomware en 2024</h3>
+                        <p>Analyse des dernières tendances en matière de cyberattaques et stratégies de protection recommandées.</p>
+                        <a href="#" class="article-link">Lire l'article →</a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card" data-category="cloud">
+                    <div class="article-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="article-content">
+                        <span class="article-date">1 Novembre 2024 • Cloud</span>
+                        <h3>Migration multi-cloud : stratégies et bonnes pratiques</h3>
+                        <p>Comment optimiser vos architectures cloud pour bénéficier des avantages de plusieurs fournisseurs.</p>
+                        <a href="#" class="article-link">Lire l'article →</a>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="article-card" data-category="entreprise">
+                    <div class="article-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                    <div class="article-content">
+                        <span class="article-date">25 Octobre 2024 • Entreprise</span>
+                        <h3>Groupe La Passerelle obtient la certification ISO 27001</h3>
+                        <p>Notre engagement pour la sécurité de l'information reconnu par cette certification internationale.</p>
+                        <a href="#" class="article-link">Lire l'article →</a>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="article-card" data-category="technologie">
+                    <div class="article-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                    <div class="article-content">
+                        <span class="article-date">18 Octobre 2024 • Technologie</span>
+                        <h3>Le développement low-code : opportunités et limites</h3>
+                        <p>Évaluation des plateformes low-code/no-code et leur impact sur le développement d'applications.</p>
+                        <a href="#" class="article-link">Lire l'article →</a>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="article-card" data-category="securite">
+                    <div class="article-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+                    <div class="article-content">
+                        <span class="article-date">11 Octobre 2024 • Sécurité</span>
+                        <h3>Zero Trust : au-delà du buzzword</h3>
+                        <p>Implémentation pratique des architectures Zero Trust dans les environnements hybrides modernes.</p>
+                        <a href="#" class="article-link">Lire l'article →</a>
+                    </div>
+                </article>
+
+                <!-- Article 7 -->
+                <article class="article-card" data-category="cloud">
+                    <div class="article-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+                    <div class="article-content">
+                        <span class="article-date">4 Octobre 2024 • Cloud</span>
+                        <h3>Optimisation des coûts cloud : guide complet</h3>
+                        <p>Stratégies et outils pour réduire vos dépenses cloud sans sacrifier les performances.</p>
+                        <a href="#" class="article-link">Lire l'article →</a>
+                    </div>
+                </article>
+
+                <!-- Article 8 -->
+                <article class="article-card" data-category="entreprise">
+                    <div class="article-image" style="background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);"></div>
+                    <div class="article-content">
+                        <span class="article-date">27 Septembre 2024 • Entreprise</span>
+                        <h3>Notre nouveau siège à Paris</h3>
+                        <p>Inauguration de nos nouveaux bureaux conçus pour favoriser l'innovation et la collaboration.</p>
+                        <a href="#" class="article-link">Lire l'article →</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn next">Suivant →</button>
+            </div>
+        </div>
+    </main>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Restez informé</h2>
+                <p>Recevez chaque mois nos analyses sur les technologies émergentes et les bonnes pratiques.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Votre adresse email" required>
+                        <div class="error-message"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">S'abonner</button>
+                </form>
+                <p class="disclaimer">En vous abonnant, vous acceptez notre politique de confidentialité.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">⤊</span>
+                        Groupe La Passerelle
+                    </a>
+                    <p>L'excellence numérique au service de votre entreprise.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Expertises</h4>
+                    <ul>
+                        <li><a href="expertise-reseaux.html">Réseaux</a></li>
+                        <li><a href="expertise-data.html">Analyse de données</a></li>
+                        <li><a href="expertise-programmation.html">Programmation</a></li>
+                        <li><a href="expertise-bdd.html">Bases de données</a></li>
+                        <li><a href="expertise-securite.html">Sécurité</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="presentation.html">Présentation</a></li>
+                        <li><a href="actualites.html">Actualités</a></li>
+                        <li><a href="recrutement.html">Recrutement</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>contact@grouplapasserelle.fr</p>
+                    <p>+33 1 23 45 67 89</p>
+                    <p>Paris, Lyon, Toulouse</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Groupe La Passerelle. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/news-filter.js"></script>
+</body>
+</html>

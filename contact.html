@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Groupe La Passerelle</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⤊</span>
+                <span class="logo-text">Groupe La Passerelle</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html">Accueil</a>
+                <a href="presentation.html">Présentation</a>
+                <div class="dropdown">
+                    <a href="#">Expertises <span class="arrow">▼</span></a>
+                    <div class="dropdown-content">
+                        <a href="expertise-reseaux.html">Réseaux</a>
+                        <a href="expertise-data.html">Analyse de données</a>
+                        <a href="expertise-programmation.html">Programmation</a>
+                        <a href="expertise-bdd.html">Bases de données</a>
+                        <a href="expertise-securite.html">Sécurité</a>
+                    </div>
+                </div>
+                <a href="actualites.html">Actualités</a>
+                <a href="recrutement.html">Recrutement</a>
+                <a href="contact.html" class="active btn-contact">Contact</a>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <button class="theme-toggle" aria-label="Changer le thème">
+                <span class="theme-icon">☀️</span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <p>Une question, un projet ? Notre équipe est à votre écoute</p>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- Formulaire de contact -->
+                <div class="contact-form-section">
+                    <h2>Envoyez-nous un message</h2>
+                    <p class="section-subtitle">Nous vous répondrons dans les 24 heures ouvrées</p>
+                    
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstname">Prénom *</label>
+                                <input type="text" id="firstname" name="firstname" class="form-control" required>
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname">Nom *</label>
+                                <input type="text" id="lastname" name="lastname" class="form-control" required>
+                                <div class="error-message"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Société</label>
+                            <input type="text" id="company" name="company" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                            <div class="error-message"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" class="form-control">
+                            <div class="error-message"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Sujet *</label>
+                            <select id="subject" name="subject" class="form-control" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="devis">Demande de devis</option>
+                                <option value="expertise">Question sur nos expertises</option>
+                                <option value="partenariat">Proposition de partenariat</option>
+                                <option value="recrutement">Recrutement</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                            <div class="error-message"></div>
+                        </div>
+                        
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Je souhaite recevoir la newsletter mensuelle</label>
+                        </div>
+                        
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">J'accepte la politique de confidentialité *</label>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit">
+                            <span class="submit-text">Envoyer le message</span>
+                            <span class="loading-spinner" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Envoi en cours...
+                            </span>
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Informations de contact -->
+                <div class="contact-info-section">
+                    <div class="info-card">
+                        <h3>Nos coordonnées</h3>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Téléphone</h4>
+                                <p>+33 1 23 45 67 89</p>
+                                <p class="contact-note">Lun-Ven 9h-18h</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>contact@grouplapasserelle.fr</p>
+                                <p class="contact-note">Réponse sous 24h</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Siège social - Paris</h4>
+                                <p>123 Avenue des Champs-Élysées<br>75008 Paris</p>
+                                <p class="contact-note">Sur rendez-vous</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3>Nos agences</h3>
+                        
+                        <div class="agency">
+                            <h4>Lyon</h4>
+                            <p>45 Rue de la République<br>69002 Lyon</p>
+                            <p><i class="fas fa-phone"></i> +33 4 78 12 34 56</p>
+                        </div>
+                        
+                        <div class="agency">
+                            <h4>Toulouse</h4>
+                            <p>12 Allée des Sciences<br>31000 Toulouse</p>
+                            <p><i class="fas fa-phone"></i> +33 5 61 23 45 67</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3>Réseaux sociaux</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carte -->
+            <div class="map-section">
+                <h2>Nous trouver</h2>
+                <div class="map-container">
+                    <!-- Carte Google Maps intégrée -->
+                    <div class="map-placeholder" id="map">
+                        <div class="map-overlay">
+                            <h3>Siège social - Paris</h3>
+                            <p>123 Avenue des Champs-Élysées, 75008 Paris</p>
+                            <button class="btn-map" id="open-map">
+                                <i class="fas fa-map-marked-alt"></i>
+                                Ouvrir dans Google Maps
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ Contact -->
+            <div class="contact-faq">
+                <h2>Questions fréquentes</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>Quel est votre délai de réponse ?</h3>
+                        <p>Nous nous engageons à répondre à toutes les demandes sous 24 heures ouvrées. Pour les demandes urgentes, privilégiez l'appel téléphonique.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Proposez-vous des consultations gratuites ?</h3>
+                        <p>Oui, nous offrons une consultation initiale d'une heure pour discuter de votre projet et évaluer vos besoins.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Dans quelles villes intervenez-vous ?</h3>
+                        <p>Nous intervenons dans toute la France, avec des équipes basées à Paris, Lyon et Toulouse. Nous travaillons également à l'international.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Comment obtenir un devis ?</h3>
+                        <p>Remplissez le formulaire de contact en sélectionnant "Demande de devis". Notre équipe commerciale vous contactera pour comprendre vos besoins.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">⤊</span>
+                        Groupe La Passerelle
+                    </a>
+                    <p>L'excellence numérique au service de votre entreprise.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Expertises</h4>
+                    <ul>
+                        <li><a href="expertise-reseaux.html">Réseaux</a></li>
+                        <li><a href="expertise-data.html">Analyse de données</a></li>
+                        <li><a href="expertise-programmation.html">Programmation</a></li>
+                        <li><a href="expertise-bdd.html">Bases de données</a></li>
+                        <li><a href="expertise-securite.html">Sécurité</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="presentation.html">Présentation</a></li>
+                        <li><a href="actualites.html">Actualités</a></li>
+                        <li><a href="recrutement.html">Recrutement</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>contact@grouplapasserelle.fr</p>
+                    <p>+33 1 23 45 67 89</p>
+                    <p>Paris, Lyon, Toulouse</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Groupe La Passerelle. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
